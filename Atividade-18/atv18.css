@@ -1,0 +1,78 @@
+/* Resetando todos os elementos */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Alinhando o container principal no meio da tela */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+container{
+
+    /* Definindo o tamanho para o container */
+
+    width: 500px;
+    height: 400px;
+
+    /* Definindo a organização dos items dentro do container (4 por linha) */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* Definindo cor de fundo */
+
+    background-color: #5C434C;
+
+    /* Alinhando os itens no meio do espaço que eles ocupam no container */
+
+    justify-items: center;
+    align-items: center;
+}
+
+div{
+
+    /* Definindo tamanho para as formas */
+
+    width: 80px;
+    height: 80px;
+
+    /* Arredondo borda */
+
+    border-radius: 100px 0px 0px 0px;
+
+    /* Definindo uma cor padrão para todos os itens */
+
+    background-color: #F09462;
+}
+
+/* Alterando a cor dos itens pares */
+
+div:nth-child(even){
+    background-color: #F5D6B4;
+}
+
+/* Mudando a cor da fileira do meio */
+
+div:nth-child(5){
+    background-color: #F5D6B4;
+}
+
+div:nth-child(6){
+    background-color: #F09462;
+}
+
+div:nth-child(7){
+    background-color: #F5D6B4;
+}
+
+div:nth-child(8){
+    background-color: #F09462;
+}
