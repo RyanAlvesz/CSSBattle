@@ -52,6 +52,10 @@ button a{
     font-family: 'Fjalla One', sans-serif;
     color: #14313e;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 footer{
