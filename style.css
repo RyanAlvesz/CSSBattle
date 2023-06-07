@@ -1,0 +1,53 @@
+/* Resetando todos os elementos */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Editando o container principal */
+
+container{
+
+    /* Definindo o tamanho */
+
+    width: 500px;
+    height: 400px;
+
+    /* Pintando */
+
+    background-color: #62374e; 
+
+    /* Configurando o display para ficar 2 quadrados em cada linha */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* Afastando das bordas */
+
+    padding: 50px;
+}
+
+div{
+
+    /* Estilizando todos os quadrados com tamanho e cor */
+
+    background-color: #fdc57b;
+    width: 80px;
+    height: 80px;
+}
+
+/* Arrumando a posição de cada quadrado dentro do container */
+
+#dois{
+    place-self: start end;
+}
+
+#tres{
+    align-self: flex-end;
+}
+
+#quatro{
+    place-self: flex-end;
+}
