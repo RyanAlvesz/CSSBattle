@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+/* Alinhando o container principal no meio da tela */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 /* Editando o container principal */
 
 container{
